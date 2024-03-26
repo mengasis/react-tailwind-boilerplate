@@ -1,11 +1,15 @@
-import type { ReactNode } from "react"
+import type { ReactNode } from "react";
 
-interface Props{
-    children: ReactNode
+interface Props {
+	children: ReactNode;
 }
 
-function Container(props: Props ){
-    return <div className=" bg-emerald-400 min-w-[300px] min-h-[300px] max-w-[800px] rounded-xl">{props.children}</div>
+function Container(props: Props) {
+	return (
+		<div className="bg-white w-full min-w-[300px] min-h-[500px] max-w-[800px] p-10">
+			{props.children}
+		</div>
+	);
 }
 
-export default Container
+export default Container;
